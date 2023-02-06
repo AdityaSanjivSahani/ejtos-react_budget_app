@@ -56,10 +56,11 @@ const AllocationForm = (props) => {
                 </div>
                   <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
                         <option defaultValue value="Add" name="Add">Add</option>
+                        <i class="bi bi-plus-circle"></i>
                 <option value="Reduce" name="Reduce">Reduce</option>
                   </select>
 
-                    <input
+                  £<input
                         required='required'
                         type='number'
                         id='cost'

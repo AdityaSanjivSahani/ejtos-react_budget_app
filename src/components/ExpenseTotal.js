@@ -11,7 +11,16 @@ const ExpenseTotal = () => {
     return (
         <div className='alert alert-primary'>
             <span>Spent so far: £{totalExpenses}</span>
-        </div>
+            <div className="mb-3 color:green">
+                    <label htmlFor="Currency" className="form-label">Currency</label>
+                    <select  className="form-control" name="bankName" >
+                        <option value="$">$ Dollar</option>
+                        <option value="£">£ Pound</option>
+                        <option value="€">€ Euro</option>
+                        <option value="₹">₹ Rupee</option>
+                    </select>
+                </div>
+</div>
     );
 };
 
